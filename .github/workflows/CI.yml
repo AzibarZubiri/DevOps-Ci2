@@ -13,5 +13,4 @@ jobs:
         with:
           distribution: adopt
           java-version: 13
-      - run: mvn package -DskipTests
       - run: mvn test
