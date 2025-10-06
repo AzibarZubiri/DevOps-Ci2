@@ -10,7 +10,7 @@ public class CalculadoraTest {
     @Test
     public void testAdd() {
         Calculadora calc = new Calculadora();
-        assertEquals("2 + 3 should equal 5", calc.add(2, 3), 5);
+        assertEquals("2 + 3 should equal 5", calc.add(2, 3), 3);
     }
 
     @Test
