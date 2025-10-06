@@ -1,11 +1,10 @@
 name: solucion-CI
 
-on: pull_request
+on: push
 
 jobs:
   Unit-Tests:
     runs-on: ubuntu-latest
-
     steps:
       - name: checkout
         uses: actions/checkout@v3
