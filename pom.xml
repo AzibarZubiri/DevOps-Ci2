@@ -36,7 +36,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>???????</mainClass>
+                            <mainClass>Main.java</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
