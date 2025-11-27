@@ -33,8 +33,8 @@ jobs:
       - name: Login to DockerHub
         uses: docker/login-action@v3.6.0
         with:
-          username: azibar666
-          password: Hammett.666
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_PASSWORD }}
       - name: Build and push
         id: docker_build
         uses: docker/build-push-action@v6.18.0
@@ -42,6 +42,6 @@ jobs:
           context: .
           file: ./docker/dockerfile
           push: true
-          tags: azibar666/cd:${{ env.RELEASE_VERSION }}
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ secrets.DOCKERHUB_PROJECT }}:${{ env.RELEASE_VERSION }}
 
 
