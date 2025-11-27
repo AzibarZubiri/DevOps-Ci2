@@ -21,7 +21,7 @@ jobs:
         with:
           distribution: temurin
           java-version: 17
-      # Builds Maven Proyect
+      # Builds the Maven Proyect
       - name: Maven Package without test
         run: mvn -B clean package -DskipTests
       # Next jobs creates a docker and pushes it to DockerHub
