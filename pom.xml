@@ -36,7 +36,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>Main.java</mainClass>
+                            <mainClass>actions.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
