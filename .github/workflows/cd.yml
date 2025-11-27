@@ -40,7 +40,7 @@ jobs:
         uses: docker/build-push-action@v6.18.0
         with:
           context: .
-          file: ./docker/dockerfile
+          file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USER }}/${{ secrets.DOCKERHUB_PROJECT }}:${{ env.RELEASE_VERSION }}
 
