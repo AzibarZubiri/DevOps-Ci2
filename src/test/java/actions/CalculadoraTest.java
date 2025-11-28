@@ -28,7 +28,7 @@ public class CalculadoraTest {
     @Test
     public void testDivide(){
         Calculadora calc = new Calculadora();
-        double resultado=calc.divide(3, 2);
+        float resultado=calc.divide(3, 2);
         assertEquals(1.5,resultado,0.0001);
     }
 }
