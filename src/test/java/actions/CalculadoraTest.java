@@ -28,7 +28,7 @@ public class CalculadoraTest {
     @Test
     public void testDivide(){
         Calculadora calc = new Calculadora();
-        assertEquals("3 * 2 should equal 6", calc.divide(3, 2), 1.5);
+        assertEquals("3 * 2 should equal 6", 1.5, calc.divide(3, 2));
     }
 }
 
