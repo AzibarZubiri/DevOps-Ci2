@@ -24,5 +24,12 @@ public class CalculadoraTest {
         Calculadora calc = new Calculadora();
         assertEquals("3 * 2 should equal 6", calc.multiply(3, 2), 6);
     }
+
+    @Test
+    public void testDivide(){
+        Calculadora calc = new Calculadora();
+        float resultado=calc.divide(3, 2);
+        assertEquals(1.5,resultado,0.0001);
+    }
 }
 
