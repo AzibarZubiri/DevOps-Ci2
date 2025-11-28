@@ -16,6 +16,7 @@ public class Main {
         System.out.println("Suma: " + calc.add(a, b));
         System.out.println("Resta: " + calc.subtract(a, b));
         System.out.println("Multiplicación: " + calc.multiply(a, b));
+        System.out.println("División: " + calc.divide(a, b));
 
         scanner.close();
     }
