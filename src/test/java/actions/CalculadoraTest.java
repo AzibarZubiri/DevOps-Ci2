@@ -25,11 +25,11 @@ public class CalculadoraTest {
         assertEquals("3 * 2 should equal 6", calc.multiply(3, 2), 6);
     }
 
-    @SuppressWarnings("deprecation")
     @Test
     public void testDivide(){
         Calculadora calc = new Calculadora();
-        assertEquals("3 * 2 should equal 6",calc.divide(4, 2),2);
+        double resultado=calc.divide(3, 2);
+        assertEquals(1.5,resultado,0.0001);
     }
 }
 
